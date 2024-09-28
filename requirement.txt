@@ -1,0 +1,28 @@
+1-total sales
+2-slicer of month name
+3-slicer of region
+4-total sale(actual)=unit price*quantity
+by region(using pie chart)
+5-total sale(actual)=unit price*quantity
+by country(using map)
+6-actual by customer name(top 3 using filter on customer name)
+7-actual bu product
+8-acutal by week of year
+
+
+-------------steps-------------
+1-actaul column =unit price*quantity
+2-turn date into month name and week of year
+3-click enter data create table =theme
+theme(dark,light)value(1,2)
+add measures
+  Background = IF(SUM(Theme[Value])=1,"#161217","#e6c5ff")
+  Banner = IF(SUM(Theme[Value])=1,"#d9b300","#220c33")
+  Border& Visual = IF(SUM(Theme[Value])=1,"Black","white")
+  Font = IF(SUM(Theme[Value])=1,"white","#373ade")
+  Header = IF(SUM(Theme[Value])=1,"#161217","#ad40ff")
+  shadow = IF(SUM(Theme[Value])=1,"white","Black")
+  Title = IF(SUM(Theme[Value])=1,"#b50b66","#ad40ff")
+
+
+and apply it in all chart (font,background,border)
